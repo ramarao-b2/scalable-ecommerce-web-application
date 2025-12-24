@@ -24,4 +24,6 @@ jobs:
       - run: terraform init
       - run: terraform validate
       - run: terraform plan
+        working-directory: terraform
+        
       - run: terraform apply -auto-approve
